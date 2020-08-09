@@ -1,0 +1,30 @@
+.fixed-fraction-container {
+	width:600px;
+	grid-template-columns: 100px 1fr;
+
+}
+
+.fixed-auto-container {
+	width:600px;
+	grid-template-columns: 100px auto; //equivale a quello sopra
+}
+
+.two-fraction-container {
+	width:600px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.two-auto-container {
+	width:600px;
+	grid-template-columns: auto auto; //equivale a quella sopra
+}
+
+.auto-fraction-container {
+	width:600px;
+	grid-template-columns: auto 1fr;
+}
+
+.auto-fraction-auto-container {
+	width:600px;
+    grid-template-columns: auto 1fr auto;
+}

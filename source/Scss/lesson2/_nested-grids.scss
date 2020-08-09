@@ -1,0 +1,9 @@
+.parent-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.child-container {
+	margin: 10px;
+	grid-template-columns: 1fr 1fr;
+}

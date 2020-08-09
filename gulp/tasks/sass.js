@@ -79,28 +79,25 @@ var plugins = [
 
 // Compiles  Sass and merge
 
-gulp.task('app-css', function() {
+gulp.task('sass', function() {      
 
-    var mycss = gulp.src(CONFIG.PATHS.sourcedir+'Scss/app.scss')
-        .pipe(sourcemaps.init()) 
-        .pipe(plumber())    
-        .pipe(sass(sassopts).on('error', sass.logError))
-        .pipe(gulp.dest(CONFIG.PATHS.destinationdir+'Assets/Css')) //I could remove this one if only I could find a way to get postcss-assets AND postcss-maps working together in a decent way!
-        .pipe(gulppostcss(plugins))
-        ;
-    return streamqueue({ objectMode: true }, mycss)
-        
-        .pipe(concat('app.css'))
-        .pipe(sourcemaps.write('.',{includeContent: false}))
-        .pipe(gulp.dest(CONFIG.PATHS.destinationdir+'Assets/Css'));
+ 
+  
+  return gulp.src(CONFIG.PATHS.sourcedir+'Scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(plumber())    
+    .pipe(sass(sassopts).on('error', sass.logError))   
+    .pipe(gulp.dest(CONFIG.PATHS.destinationdir+'Assets/Css'))
+    .pipe(gulppostcss(plugins))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(CONFIG.PATHS.destinationdir+'Assets/Css'))
+    ;
 });
 
 
 
 
-gulp.task ('sass',
-    gulp.series('app-css')
-                );
+
 
 
 

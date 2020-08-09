@@ -1,0 +1,66 @@
+
+
+@mixin style-for-gap{
+	grid-template-columns: 1fr 1fr;
+	.item {
+	    border: 1px solid #F00;
+	}
+}
+
+
+.column-gap-container {
+	@include style-for-gap;
+	column-gap: 20px;
+}
+
+.row-gap-container {
+	@include style-for-gap;
+	row-gap: 20px;
+}
+
+.both-gap-container {
+	@include style-for-gap;
+	column-gap: 20px;
+	row-gap: 20px;
+
+}
+
+.combined-gap-container {
+	@include style-for-gap;
+	gap: 20px;
+}
+
+.percentage-gap-container {
+	@include style-for-gap;
+	gap: 10%;
+}
+
+.vw-gap-container {
+	@include style-for-gap;
+	gap: 5vw;
+}
+
+.vh-gap-container {
+	@include style-for-gap;
+	gap: 5vh;
+}
+
+.vmax-gap-container {
+	@include style-for-gap;
+	gap: 5vmax;
+}
+
+.vmin-gap-container {
+	@include style-for-gap;
+	gap: 5vmin;
+}
+
+.em-gap-container {
+	@include style-for-gap;
+	gap: 1em;
+}
+
+.rem-gap-container {
+	@include style-for-gap;
+	gap:1rem;
+}

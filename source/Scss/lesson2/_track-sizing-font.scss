@@ -1,0 +1,28 @@
+%container-font-sized {
+    
+    font-size: 20px;
+}
+
+.two-em-column-container {
+	@extend %container-font-sized;
+	grid-template-columns: 10em 20em;
+
+}
+
+.two-em-row-container {
+	@extend %container-font-sized;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 5em 6em;
+}
+
+.two-rem-column-container {
+	@extend %container-font-sized;
+	grid-template-columns:  12.5rem 25rem;
+}
+
+.two-rem-row-container {
+	@extend %container-font-sized;
+	grid-template-columns: 200px 200px;
+	grid-template-rows: 6.25rem 7.5rem;	
+
+}

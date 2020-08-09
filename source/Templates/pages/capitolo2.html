@@ -1,0 +1,735 @@
+---
+
+title: Capitolo 2 - Containers and Tracks
+
+background: gradient
+
+lesson: lesson2
+
+---
+
+
+{{>section-title title='Esercizio 1: definizione della griglia'}}
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="inline-container">
+        <div class="item">1</div>
+        <div class="item">2 lorem</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+{{>section-title title='Esercizio 2: Definizione di righe e colonne'}}
+
+
+<div class="container two-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container just-rows-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-by-two-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container four-by-one-container">
+        <div class="item">1</div>
+        <div class="item">2 Lorem Ipsum dolor sit amet et cetera et cetea et cetera et ceterea et cetera Lorem Ipsum dolor sit amet et cetera et cetea et cetera et ceterea et cetera<</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container just-columns-container">
+        <div class="item">1</div>
+        <div class="item">2 Lorem Ipsum dolor sit amet et cetera et cetea et cetera et ceterea et cetera Lorem Ipsum dolor sit amet et cetera et cetea et cetera et ceterea et cetera</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container unnecessary-columns-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container unnecessary-rows-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+{{>section-title title='Esercizio 3: La proprietà grid.'}}
+
+    <div class="container grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+
+{{>section-title title='Esercizio 4: Track size fissi e in percentuale'}}
+
+
+    <div class="container two-fixed-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-fixed-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-percentage-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-percentage-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+{{>section-title title='Esercizio 5: Track size basato sul font-size'}}
+
+    <div class="container two-em-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-em-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-rem-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-rem-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+{{>section-title title='Esercizio 6: Track size basato sul viewport'}}
+
+
+<div class="container two-vw-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vw-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vh-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vh-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vmax-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vmax-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vmin-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-vmin-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    {{>section-title title='Esercizio 7 - Track size automatici'}}
+
+<div class="container two-equal-size-column-container">
+        <div class="item">Dolor proident non excepteur pariatur id duis non elit et veniam. </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-equal-size-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">Sed consectetur dolor exercitation nulla pariatur aute et ad exercitation nostrud labore officia fugiat aliqua nulla cillum.</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container three-equal-size-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container three-equal-size-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <div class="container four-equal-size-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-auto-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-one-column-larger-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4000000000000</div>
+    </div>
+
+
+    {{>section-title title='Esercizio 8 - Fractions Unit (fr)'}}
+
+<div class="container two-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-fraction-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container one-two-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container one-three-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-four-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-width-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container percentage-width-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-width-one-two-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-width-any-fraction-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+
+    {{>section-title title='Esercizio 9 - Fractions vs. Auto'}}
+
+
+
+
+        <div class="container fixed-fraction-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-auto-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-fraction-container">
+        <div class="item">1 Lorem ipsum proident do proident irure dolor labore pariatur qui culpa incididunt tempor nisi ut dolore sint dolore dolore consequat exercitation enim voluptate est dolor aute dolor ex duis nisi ut magna laboris.</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container two-auto-container">
+        <div class="item">1 Laborum irure deserunt ad dolor deserunt incididunt irure dolor aute commodo irure sint dolore veniam aliquip dolore minim ut laboris amet in enim.</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container auto-fraction-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container auto-fraction-auto-container">
+        <div class="item">1 Veniam quis officia amet fugiat </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    {{>section-title title='Esercizio 10 - La funzione minmax'}}
+
+    <div class="container fixed-min-max-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-min-max-row-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-percentage-min-max-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-fraction-min-max-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fixed-auto-min-max-column-container ">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container auto-fixed-min-max-column-container">
+        <div class="item">Lorem ipsum sed esse consectetur minim culpa consequat ex dolore commodo dolore ex magna cillum in.</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container multiple-min-max-column-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+    {{>section-title title='Esercizio 11 - I trabocchetti della funzione minmax'}}   
+
+
+<div class="container percentage-fixed-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container viewport-fixed-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container em-fixed-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container rem-fixed-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container fraction-fixed-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+    <div class="container two-fractions-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container inner-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+   {{>section-title title='Esercizio 12 - min-content e max-content'}}   
+
+
+
+    <div class="container min-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
+            This is because we are utilizing the min-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container min-content-min-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see, the cell is not that big and the text collapses. 
+            This is because we are utilizing the min-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container max-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see it makes this cell really big. 
+            This is because we are using the max-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container max-content-max-content-container">
+        <div class="item">
+            This is reasonably long text, and as you can see it makes this cell really big. 
+            This is because we are using the max-content value.
+        </div>
+        <div class="item"></div>
+    </div>
+
+    <div class="container min-max-content-container">
+        <div class="item">
+            This is reasonably long text, that based on the width of you window can go from being really small in width with text collaped, to
+            a size that will allow this entire sentence to fit. .This is because we are using minmax(min-content, max-content)
+        </div>
+        <div class="item"></div>
+    </div>    
+
+
+   {{>section-title title='Esercizio 13 - la funzione fit-content'}}   
+
+
+    <div class="container min-content-pixel-min-max-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container fixed-fit-content-container">
+        <div class="item">
+            1
+            <!-- This content will go a max of 300 pixels -->
+            <!-- A little bit of text -->
+        </div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container percentage-fit-content-container">
+        <div class="item">
+            1
+            <!-- This content will go a max of 50% of the container. 
+                 Once it's gone that far then it will 
+                 collapse like this. -->
+        </div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container auto-fit-content-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+
+    <div class="container fraction-fit-content-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>    
+
+   {{>section-title title='Esercizio 14 - la funzione repeat'}}  
+
+    <div class="container repeat-fixed-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+
+    </div>
+
+    <div class="container repeat-percentage-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="container repeat-fraction-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <div class="container repeat-minmax-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container repeat-multiple-columns-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <div class="container both-set-and-repeat-columns-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+
+ {{>section-title title='Esercizio 15 - Gaps (spaziature)'}} 
+
+
+    <div class="container column-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container row-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container both-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container combined-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container percentage-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container vw-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container vh-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container vmax-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container vmin-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container em-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <div class="container rem-gap-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>   
+
+
+ {{>section-title title='Esercizio 16 - Griglie innestate'}}
+    <h3>esempio in cui un item contiene un grid container</h3>
+
+     <div class="container parent-container">
+        <div class="item">0.1</div>
+        <div class="item">0.2</div>
+        <div class="item">0.3</div>
+        <div class="item">
+            <div class="container child-container">
+                <div class="item">0.4.1</div>
+                <div class="item">0.4.2</div>
+                <div class="item">0.4.3</div>
+                <div class="item">0.4.4</div>
+            </div>
+        </div>
+    </div>
+
+
+        <h3>esempio in cui un item è a sua volta un grid container</h3>
+        <div class="container parent-container">
+        <div class="item">0.1</div>
+        <div class="item">0.2</div>
+        <div class="item">0.3</div>
+        <div class="item container child-container">
+            
+            <div class="item">0.4.1</div>
+            <div class="item">0.4.2</div>
+            <div class="item">0.4.3</div>
+            <div class="item">0.4.4</div>
+            
+        </div>
+    </div>     

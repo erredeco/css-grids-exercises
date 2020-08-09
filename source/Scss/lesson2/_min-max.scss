@@ -1,0 +1,29 @@
+.fixed-min-max-column-container {
+	grid-template-columns:  minmax(400px,600px) 100px;
+}
+
+.fixed-min-max-row-container {
+    height:50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  minmax(200px,400px) 100px;
+}
+
+.fixed-percentage-min-max-column-container {
+    grid-template-columns:  minmax(200px,50%) 400px;
+}
+
+.fixed-fraction-min-max-column-container {
+    grid-template-columns:  minmax(400px,1fr) 100px;
+}
+
+.fixed-auto-min-max-column-container {
+    grid-template-columns:  minmax(400px,auto) 100px;
+}
+
+.auto-fixed-min-max-column-container {
+    grid-template-columns:  minmax(auto,600px) 100px;
+}
+
+.multiple-min-max-column-container {
+    grid-template-columns:  minmax(600px,1fr) minmax(300px, 1fr);
+}

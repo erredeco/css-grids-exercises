@@ -1,19 +1,13 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
-
 // This includes all of the foundation global elements that are needed to work with any of the other files.
-@import "settings/mysettings";
-@import "normalize";
+@import "../settings/mysettings";
 
 //Import here all other styles:
-@import "mixins-functions";
-@import "base"; 
-
-
+@import "../mixins-functions";
 
 //Lezione 3
-@import "lesson3/order"; 
 
-
-@import "other_styles";
-
+@import "order";
+@import "grid-item-column-positioning";
+@import "grid-item-row-positioning";

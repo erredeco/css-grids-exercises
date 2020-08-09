@@ -1,0 +1,25 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+// This includes all of the foundation global elements that are needed to work with any of the other files.
+@import "../settings/mysettings";
+
+//Import here all other styles:
+@import "../mixins-functions";
+
+//Lezione 2
+@import "grid-container-basics"; 
+@import "template-rows-columns";
+@import "grid-property-basics";
+@import "track-sizing-basics";
+@import "track-sizing-font";
+@import "track-sizing-viewport";
+@import "track-sizing-auto";
+@import "fractions";
+@import "fractions-vs-auto";
+@import "min-max";
+@import "min-max-gotchas"; 
+@import "min-max-content"; 
+@import "fit-content"; 
+@import "repeat-function";
+@import "gaps";
+@import "nested-grids";
