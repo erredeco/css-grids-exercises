@@ -3,8 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, max-content);
     background: #fff;
-    margin-top: 100px;
-    margin-bottom: 100px;    
+    margin: 100px; 
 }
 
 .item-one-to-last-row-container > .item:first-of-type {
