@@ -2,8 +2,7 @@
 	@extend .container;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 70px);
-    background: #FFF;
-    margin: 100px;
+
 }
 
 .item-one-to-second-column-container > .item:first-of-type {

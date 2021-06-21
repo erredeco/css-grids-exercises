@@ -1,11 +1,13 @@
 .container {
 	display:grid;
-
+    background: #fff;
+    margin: 100px;  	
 }
 
 .container--order{
 	@extend .container;
 	grid-template-columns: repeat(4, 1fr);
+
 
 }
 

@@ -1,0 +1,58 @@
+.container--rwd-spanning-basics{
+
+
+    //Define basic styles
+     > *{
+
+        padding: 20px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+     }
+     > header,
+     > footer {
+        background: #0048AA;
+        color: #FFF;
+    }
+
+
+    //define grid
+    @extend .container;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: max-content 480px max-content 1fr max-content;
+
+    grid-template-areas: 
+                            'header header'
+                            'video-player   related-videos'
+                            'video-title    related-videos' 
+                            'video-comment  related-videos'
+                            'footer footer'                            
+                            ;
+
+
+     > header {
+        grid-area: header
+    }
+
+     > footer {
+        grid-area: footer
+    }
+
+    #video-player-section {
+        grid-area: video-player
+    }
+
+    #video-title-section {
+        grid-area: video-title
+    }
+
+    #video-comments-section {
+        grid-area: video-comment
+    }
+
+    #related-videos-section {
+        grid-area: related-videos
+    }
+
+}

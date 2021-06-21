@@ -1,0 +1,71 @@
+.container {
+    display:grid;
+    background: #fff;
+    margin: 100px;     
+}
+
+
+.container--rwd-positioning-basics{
+    @extend .container;
+
+/*
+aggiungi una stringa per ogni riga che vuoi nella tua griglia e finisci col ;
+    Ogni stringa rappresenta un’ area
+
+ */
+
+    grid-template-areas: 
+                        'area-d'
+                        'area-f'
+                        'area-a'
+                        'area-c'
+                        'area-b'
+                        'area-e'
+                        ;
+
+    #item-a {
+        grid-area: area-a ; 
+    }
+
+
+    #item-b {
+        grid-area: area-b;
+    }
+
+    #item-c {
+        grid-area: area-c;
+    }
+
+    #item-d {
+        grid-area: area-d;
+    }
+
+    #item-e {
+        grid-area: area-e;
+    }
+
+    #item-f {
+        grid-area: area-f;
+    }
+
+    @media (min-width: 768px) {
+            grid-template-columns:  repeat(2, 1fr);
+            grid-template-areas: 
+                                'area-f area-d'
+                                'area-b area-e'
+                                'area-a area-c'
+
+                                ;
+
+    }
+
+    @media (min-width: 1024px) {
+            grid-template-columns:  repeat(3, 1fr);
+            grid-template-areas: 
+                                'area-f area-c area-b'
+                                'area-e area-d  area-a'
+                                ;
+    }
+
+}
+

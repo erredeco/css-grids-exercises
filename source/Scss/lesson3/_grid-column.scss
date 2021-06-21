@@ -1,0 +1,76 @@
+.container-grid-column {
+    @extend .container;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+
+
+	&.item-one-to-second-column-container > .item:first-of-type {
+	    //grid-column-start: 2;
+	    //grid-column-end: 3;
+
+	    //equivalent:
+	    grid-column: 2 / 3;
+	}
+
+	&.item-two-to-third-column-container > .item:nth-of-type(2) {
+	    //grid-column-start: 3;
+	    
+	    //equivalent
+	    grid-column: 3 / auto;
+	}
+
+	&.item-three-to-first-column-container > .item:nth-of-type(3) {
+	    //grid-column-start: 1;
+
+	    //equivalent
+	    grid-column: 1 / span 1;
+
+	}
+
+	&.item-four-to-second-column-container > .item:nth-of-type(4) {
+	    //grid-column-start: 2;
+	    //equivalent
+	    grid-column: 2;
+	}
+
+	&.item-five-to-last-column-container > .item:nth-of-type(5) {
+	    //grid-column-end: 5;
+		//equivalent
+	    grid-column: auto / 5;
+	}
+
+	&.item-six-spans-three-columns-container > .item:nth-of-type(6) {
+	    //grid-column-start: 2;
+	    //grid-column-end: 5;
+		//equivalent
+		grid-column: 2 / span 3;
+
+	}
+
+	&.item-five-span-three-columns-container > .item:nth-of-type(5) {
+	    //grid-column-end: span 3;   
+	    //equivalent
+	    grid-column: auto / span 3
+    	//equivalent
+    	// grid-column: span 3 / auto	    
+
+	}
+
+	&.line-name-basics-container {
+	    grid-template-columns: [line1] 1fr repeat(3, 1fr) [fifth];
+	    grid-template-rows: repeat(3, 100px);
+	}
+
+	&.line-name-basics-container > .item:last-of-type {
+	    //grid-column-start: line1;
+	    //grid-column-end: span fifth;
+	    //equivalent
+	    grid-column: line1 / fifth;
+	}
+
+
+
+
+}
+

@@ -75,3 +75,25 @@
 	        font($font-file+'.otf') format('truetype')	       
 	}
 }
+
+
+@mixin media-up($breakpoint){
+
+	@media only screen and (min-width: $breakpoint){
+	    @content;
+	}
+}
+
+@mixin media-down($breakpoint){
+
+	@media only screen and (max-width: $breakpoint){
+	    @content;
+	}
+}
+
+@mixin media-between($breakpointmin,$breakpointmax){
+
+	@media only screen and  (min-width: $breakpointmin) and (max-width: $breakpointmax) {
+	    @content;
+	}
+}
