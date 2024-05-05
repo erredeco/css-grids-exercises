@@ -1,0 +1,131 @@
+
+.row-lock-row-flow-container,
+.column-lock-row-flow-container,
+.row-lock-row-flow-ordered-container,
+.too-many-items-in-row-container,
+.explicitly-positioned-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.row-lock-column-flow-container,
+.column-lock-column-flow-container,
+.column-lock-column-flow-ordered-container,
+.too-many-items-in-column-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    grid-auto-flow: column;
+}
+
+
+/*Coloro gli elementi che andrò a bloccare */
+
+.row-lock-row-flow-container > .item:nth-of-type(4n),
+.row-lock-row-flow-container > .item:nth-of-type(10),
+.row-lock-column-flow-container > .item:nth-of-type(3),
+.row-lock-column-flow-container > .item:nth-of-type(6),
+.column-lock-column-flow-container > .item:nth-of-type(4n),
+.column-lock-column-flow-container > .item:nth-of-type(10),
+.column-lock-row-flow-container > .item:nth-of-type(3),
+.column-lock-row-flow-container > .item:nth-of-type(6),
+.row-lock-row-flow-ordered-container > .item:nth-of-type(4n),
+.column-lock-column-flow-ordered-container > .item:nth-of-type(4n),
+.too-many-items-in-row-container > .item:nth-of-type(2n),
+.too-many-items-in-column-container > .item:nth-of-type(2n),
+.explicitly-positioned-container > .item:nth-of-type(2n) {
+    background: #F00;
+}
+
+
+
+.row-lock-row-flow-container > .item:nth-of-type(4n) {
+    grid-row:1;
+}
+
+.row-lock-row-flow-container > .item:nth-of-type(10) {
+    grid-row:2;
+}
+
+.row-lock-column-flow-container > .item:nth-of-type(3) {
+     grid-row: 2;
+}
+
+.row-lock-column-flow-container > .item:nth-of-type(6) {
+    grid-row: 2;
+}
+
+.column-lock-column-flow-container > .item:nth-of-type(4n) {
+    grid-column: 1;
+}
+
+.column-lock-column-flow-container > .item:nth-of-type(10) {
+    grid-column: 2;
+}   
+
+.column-lock-row-flow-container > .item:nth-of-type(3) {
+ grid-column: 2;
+}
+
+.column-lock-row-flow-container > .item:nth-of-type(6) {
+ grid-column: 2;
+}
+
+.row-lock-row-flow-ordered-container > .item:nth-of-type(4n) {
+     grid-row: 1;
+}
+
+.row-lock-row-flow-ordered-container > .item:nth-of-type(8) {
+    order:-1
+}
+
+.column-lock-column-flow-ordered-container > .item:nth-of-type(4n) {
+        grid-column: 1;
+}
+
+.column-lock-column-flow-ordered-container > .item:nth-of-type(8) {
+    order: -1;
+}
+
+.too-many-items-in-row-container > .item:nth-of-type(2n) {
+    grid-row: 1;
+}
+
+.too-many-items-in-column-container > .item:nth-of-type(2n) {
+    grid-column: 1;
+}
+
+.explicitly-positioned-container > .item:nth-of-type(2) {
+        grid-area: 2 / 1 / 4 / 3;
+    //inizia  a riga 2, colonna 1 e finisce a riga 4, colonna 3 (in pratica 3x2)
+
+}
+
+.explicitly-positioned-container > .item:nth-of-type(4) {
+     grid-area: 2 / 1;
+    //inizia  a riga 2, colonna 1 ed è da 1x1. Mi aspetto che si sovrapponga al precedente da 2x2
+
+}
+
+.explicitly-positioned-container > .item:nth-of-type(6) {
+        grid-area: 2 / 2;
+    //inizia  a riga 2, colonna 2 ed è da 1x1. Mi aspetto che si sovrapponga al precedente da 2x2
+ 
+}
+
+.explicitly-positioned-container > .item:nth-of-type(8) {
+    grid-area: 3 / 1;
+    //inizia  a riga 3, colonna 1 ed è da 1x1. Mi aspetto che si sovrapponga al precedente da 2x2
+
+}
+
+.explicitly-positioned-container > .item:nth-of-type(10) {
+    grid-area: 3 / 2;
+//inizia  a riga 2, colonna 2 ed è da 1x1. Mi aspetto che si sovrapponga al precedente da 2x2
+
+}
+
+.explicitly-positioned-container > .item:nth-of-type(12) {
+    grid-area: 2 / 3;
+      //inizia  a riga 2, colonna 3 e ovviamente fa spostare tutti i successivi
+
+}

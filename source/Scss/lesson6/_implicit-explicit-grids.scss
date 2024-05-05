@@ -1,0 +1,24 @@
+.container {
+    display:grid;
+    background: #fff;
+    margin: 100px;     
+}
+
+.explicit-grid-container {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,100px);
+}
+
+.implicit-grid-rows-container {
+        grid-template-columns: repeat(2,1fr);
+}
+
+.auto-grid-rows-container {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:200px;
+    grid-auto-rows: 100px;
+}
+
+.implicit-grid-column-container {
+        grid-template-rows: repeat(4,100px);
+}
