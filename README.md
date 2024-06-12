@@ -1,4 +1,4 @@
-# my-foundation-1
+# css-grid-exercises
 my foundation 1 is my first attempt to build a development enviroment using npm and gulp; it is still flawed
 
 ##Installation instructions 
